@@ -1,19 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="website for to do list.">
-  <title>mylabsite</title>
-  <link rel="stylesheet" href="/2do/style.css">
-  <script defer src="/2do/script.js"></script>
-  <script src="/2do/script.js"></script>
+  <title>Todo List on pure JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
   <style>
-    *, *::before, *::after {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
     }
+
     body {
-      margin: 0;
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
       font-size: 1rem;
       font-weight: 400;
@@ -25,18 +26,24 @@
     }
   </style>
 </head>
+
 <body>
-    <div class="todo">
-        <div class="todo__input">
-          <input class="todo__text" type="text">
-          <span class="todo__add"></span>
-        </div>
-        <select class="todo__options">
-          <option value="active">активні</option>
-          <option value="completed">завершені</option>
-          <option value="deleted">видалені</option>
-        </select>
-        <ul class="todo__items" data-todo-option="active"></ul>
+
+  <a style="display: block;" href="/index.html">Home</a>
+  <div class="todo">
+    <div class="todo__input">
+      <input class="todo__text" type="text">
+      <span class="todo__add"></span>
     </div>
+    <select class="todo__options">
+      <option value="active">активні</option>
+      <option value="completed">завершені</option>
+      <option value="deleted">виддалені</option>
+    </select>
+    <ul class="todo__items" data-todo-option="active"></ul>
+  </div>
+
+  
 </body>
+
 </html>

@@ -9,9 +9,9 @@ const todo = {
       } else {
         elemItem.dataset.todoState = action;
         const lexicon = {
-          active: 'восстановлено',
+          active: 'відновленно',
           completed: 'завершено',
-          deleted: 'удалено'
+          deleted: 'виддалено'
         };
         const elTodoDate = elemItem.querySelector('.todo__date');
         const html = `<span>${lexicon[action]}: ${new Date().toLocaleString().slice(0, -3)}</span>`;
@@ -37,7 +37,7 @@ const todo = {
       <span class="todo__task">
         ${text}
         <span class="todo__date" data-todo-date="${date}">
-          <span>добавлено: ${new Date().toLocaleString().slice(0, -3)}</span>
+          <span>додано: ${new Date().toLocaleString().slice(0, -3)}</span>
         </span>
       </span>
       <span class="todo__action todo__action_restore" data-todo-action="active"></span>
