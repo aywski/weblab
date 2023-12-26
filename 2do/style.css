@@ -34,18 +34,18 @@
   right: 5px;
   width: 26px;
   height: 26px;
-  background-color: #8bc34a;
+  background-color: #e5da3d;
   transform: translateY(-50%);
   cursor: pointer;
   transition: background-color 0.15s ease-in;
 }
 
 .todo__add:hover {
-  background-color: #689f38;
+  background-color: #a5ad2e;
 }
 
 .todo__text:disabled + .todo__add {
-  background-color: #8bc34a;
+  background-color: #e5da3d;
   cursor: default;
   opacity: 0.5;
 }
@@ -73,7 +73,7 @@
   line-height: inherit;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12' fill='%23fff'%3E%3Cpath d='M0 0h24L12 12z'/%3E%3C/svg%3E")
   calc(100% - 10px) center no-repeat;
-  background-color: #8bc34a;
+  background-color: #dbbc4c;
   background-size: 10px;
   border: none;
   border-radius: 4px;
@@ -145,7 +145,7 @@
   }
   
   .todo__action_complete {
-    background-color: #66bb6a;
+    background-color: #6fdcd7;
   }
   
   .todo__action_restore::before {
